@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Cities bootstrapped</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-exanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="index.html">Weather API</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Menu<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temp.html">Max Temperature</a></li>
+                                <li><a href="humid.html">Humidity</a></li>
+                                <li><a href="cloud.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Windspeed</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="data.html">Data</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="compare.html">comparison</a></li>
+                        <li><a href="data.html">data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h3 class="text-center">Data used</h3>
+            <div class="row">
+                <table border="1" class="table table-striped">
+                    <thead>
+                      <tr style="text-align: right;">
+                        <th></th>
+                        <th>city_name</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>max_temp(fahrenheit)</th>
+                        <th>Cloudiness</th>
+                        <th>Humidity(%)</th>
+                        <th>Wind</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>0</th>
+                        <td>Isla Vista</td>
+                        <td>34.4133</td>
+                        <td>-119.8610</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>1</th>
+                        <td>La Patera</td>
+                        <td>34.4375</td>
+                        <td>-119.8421</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>Goleta</td>
+                        <td>34.4358</td>
+                        <td>-119.8277</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>Tajiguas</td>
+                        <td>34.4667</td>
+                        <td>-120.1085</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>Santa Barbara</td>
+                        <td>34.4208</td>
+                        <td>-119.6982</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>Mission Canyon</td>
+                        <td>34.4508</td>
+                        <td>-119.7130</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>6</th>
+                        <td>Montecito</td>
+                        <td>34.4367</td>
+                        <td>-119.6321</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>7</th>
+                        <td>Summerland</td>
+                        <td>34.4214</td>
+                        <td>-119.5966</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>8</th>
+                        <td>Toro Canyon</td>
+                        <td>34.4200</td>
+                        <td>-119.5671</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>9</th>
+                        <td>Sandpiper Mobile Home Park</td>
+                        <td>34.4092</td>
+                        <td>-119.5410</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>10</th>
+                        <td>Carpinteria</td>
+                        <td>34.3989</td>
+                        <td>-119.5185</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>11</th>
+                        <td>Shepards</td>
+                        <td>34.3989</td>
+                        <td>-119.4535</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>12</th>
+                        <td>Solvang</td>
+                        <td>34.5958</td>
+                        <td>-120.1377</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>13</th>
+                        <td>Santa Ynez</td>
+                        <td>34.6144</td>
+                        <td>-120.0799</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>14</th>
+                        <td>Buellton</td>
+                        <td>34.6136</td>
+                        <td>-120.1927</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>15</th>
+                        <td>Ventura</td>
+                        <td>34.2783</td>
+                        <td>-119.2932</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>16</th>
+                        <td>Oxnard Shores</td>
+                        <td>34.1908</td>
+                        <td>-119.2416</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>17</th>
+                        <td>Channel Islands Beach</td>
+                        <td>34.1581</td>
+                        <td>-119.2232</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                      <tr>
+                        <th>18</th>
+                        <td>Los Olivos</td>
+                        <td>34.6678</td>
+                        <td>-120.1149</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>52</td>
+                        <td>6.2</td>
+                      </tr>
+                      <tr>
+                        <th>19</th>
+                        <td>Port Hueneme</td>
+                        <td>34.1478</td>
+                        <td>-119.1952</td>
+                        <td>68.0</td>
+                        <td>75</td>
+                        <td>55</td>
+                        <td>5.1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </body>
+</html>
